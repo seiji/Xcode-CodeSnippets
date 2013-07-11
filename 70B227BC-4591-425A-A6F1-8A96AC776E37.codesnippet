@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kvo</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self willChangeValueForKey:@"&lt;#ivar#&gt;"];
+&lt;#ivar#&gt; = &lt;#newValue#&gt;;
+[self didChangeValueForKey:@"&lt;#ivar#&gt;"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70B227BC-4591-425A-A6F1-8A96AC776E37</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>KVO setter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>kvo</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

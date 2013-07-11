@@ -63,7 +63,7 @@ newIndexPath:(NSIndexPath *)newIndexPath
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSFetchedResultsControllerDelegate</string>
+	<string>NSFetchedResultsControllerDelegate Implementation</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>frcd</string>
 	<key>IDECodeSnippetUserSnippet</key>
