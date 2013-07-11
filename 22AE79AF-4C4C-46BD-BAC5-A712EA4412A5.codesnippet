@@ -65,7 +65,7 @@ newIndexPath:(NSIndexPath *)newIndexPath
 	<key>IDECodeSnippetSummary</key>
 	<string>NSFetchedResultsControllerDelegate Implementation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>frcd</string>
+	<string>nsfrcd</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

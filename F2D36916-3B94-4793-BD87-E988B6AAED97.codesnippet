@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>uiimv</string>
+	<string>nsls</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;#image name#&gt;"]]</string>
+	<string>NSLocalizedString(@"&lt;#Message#&gt;", &lt;#Comment#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DEF2ED21-A9F3-40D4-A6A3-B1149C21DC87</string>
+	<string>F2D36916-3B94-4793-BD87-E988B6AAED97</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>UIImageView Expression</string>
+	<string>NSLocalizedString</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>uiimv</string>
+	<string>nsls</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,21 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>uiimv</string>
+	<string>weakself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;#image name#&gt;"]]</string>
+	<string>__weak typeof(self)weakSelf = self;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DEF2ED21-A9F3-40D4-A6A3-B1149C21DC87</string>
+	<string>B1E0D202-C6E6-4AF0-A591-90530E49379F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>UIImageView Expression</string>
+	<string>Declare weak referece to self</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>uiimv</string>
+	<string>weakself</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
