@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logstack</string>
+	<string>logclass</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);</string>
+	<string>NSLog(@"%@:%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5548646-221B-4704-94CC-FA2641C75A1C</string>
+	<string>0AEC3293-4070-464E-99D4-6314ADC75148</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Log Stack Trace</string>
+	<string>Log Class:MethodName</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>logstack</string>
+	<string>logclass</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

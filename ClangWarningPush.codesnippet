@@ -3,21 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logstack</string>
+	<string>clangwarning</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>Preprocessor</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);</string>
+	<string>#pragma clang diagnostic push
+    #pragma clang diagnostic ignored "&lt;#-W warning#&gt;"
+    &lt;#code#&gt;
+    #pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5548646-221B-4704-94CC-FA2641C75A1C</string>
+	<string>070E28A1-5745-43DC-A387-2F469A371349</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Log Stack Trace</string>
+	<string>clang warning push/pop</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>logstack</string>
+	<string>clangwarning</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

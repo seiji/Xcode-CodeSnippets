@@ -3,21 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logstack</string>
+	<string>disbak</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);</string>
+	<string>dispatch_async(dispatch_get_global_queue(&lt;#dispatch_queue_priority_t priority#&gt;, &lt;#unsigned long flags#&gt;), ^(void) {
+    &lt;#code#&gt;
+    
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+        &lt;#code#&gt;
+    });
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5548646-221B-4704-94CC-FA2641C75A1C</string>
+	<string>76F3EF7D-B089-480D-BEEB-F8942BD9BD1E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Log Stack Trace</string>
+	<string>dispatch_async Pattern for Background Processing</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>logstack</string>
+	<string>disbak</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

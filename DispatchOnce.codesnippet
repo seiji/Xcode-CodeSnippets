@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logstack</string>
+	<string>disone</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"Call Stack: %@", [NSThread callStackSymbols]);</string>
+	<string>static dispatch_once_t pred;
+__strong static id     _sharedObject = nil;
+dispatch_once(&amp;pred, ^{
+    &lt;#statements#&gt;
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B5548646-221B-4704-94CC-FA2641C75A1C</string>
+	<string>80219F24-B318-45A6-8E10-82112C5DEB00</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Log Stack Trace</string>
+	<string>dispatch_once</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>logstack</string>
+	<string>disonce</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
