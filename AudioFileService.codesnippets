@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cam</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;AudioToolbox/AudioToolbox.h&gt;
+NSString *audioFilePath = [[NSString stringWithUTF8String:argv[1]] stringByExpandingTildeInPath];
+NSURL    *audioURL      = [NSURL fileURLWithPath:audioFilePath];
+        
+AudioFileID audioFile;
+OSStatus    theErr = noErr;
+theErr = AudioFileOpenURL((__bridge CFURLRef) audioURL, kAudioFileReadPermission, 0, &amp;audioFile);
+assert(theErr == noErr);
+        
+UInt32 dictionarySize = 0;
+theErr = AudioFileGetPropertyInfo(audioFile, kAudioFilePropertyInfoDictionary, &amp;dictionarySize, 0);
+assert(theErr == noErr);
+        
+CFDictionaryRef dictionary;
+theErr = AudioFileGetProperty(audioFile, kAudioFilePropertyInfoDictionary, &amp;dictionarySize, &amp;dictionary);
+assert(theErr == noErr);
+        
+NSLog(@"%@", dictionary);
+CFRelease(dictionary);
+theErr = AudioFileClose(audioFile);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B1CD229-54B3-496E-9F25-D461541B5E64</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CoreAudio Metadata - AudioFileService</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cam</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -3,24 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>logmethod</string>
+	<string>macro_sim</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>Preprocessor</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSLog(@"%@", NSStringFromSelector(_cmd));</string>
+	<string>#if TARGET_IPHONE_SIMULATOR
+&lt;#code#&gt;
+#end</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2CDE5E90-BE50-4877-8EF3-3A0423835070</string>
+	<string>3025BB13-16B2-4079-933A-5CD52A12100D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Log Method Name</string>
+	<string>Macro launching simulator</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>logmethod</string>
+	<string>macro_sim</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

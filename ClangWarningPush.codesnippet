@@ -10,9 +10,9 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma clang diagnostic push
-    #pragma clang diagnostic ignored "&lt;#-W warning#&gt;"
+#pragma clang diagnostic ignored "&lt;#-W warning#&gt;"
     &lt;#code#&gt;
-    #pragma clang diagnostic pop</string>
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>070E28A1-5745-43DC-A387-2F469A371349</string>
 	<key>IDECodeSnippetLanguage</key>
