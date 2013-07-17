@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dirFileFilterExtension</string>
+	<string>clangWDeprecated</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSError* error;
-    NSArray *extensions = @[@"caf"];
-    NSArray *dirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:kSystemSoundPath error:&amp;error];
-    NSArray *files = [dirContents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"pathExtension IN %@", extensions]];</string>
+	<string>#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    &lt;#code#&gt;
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>69D1DDB5-D2EA-423C-B4D4-BEC5C8556276</string>
+	<string>676C2552-7071-4477-B693-661A3073DC56</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Dir files in extensions</string>
+	<string>clang ignore -Wdeprecated-declarations</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dirFileFilterExtension</string>
+	<string>clangWDeprecated</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

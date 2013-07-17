@@ -3,24 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dirFileFilterExtension</string>
+	<string>catProp</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSError* error;
-    NSArray *extensions = @[@"caf"];
-    NSArray *dirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:kSystemSoundPath error:&amp;error];
-    NSArray *files = [dirContents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"pathExtension IN %@", extensions]];</string>
+	<string>// @property (strong, nonatomic) NSString *playIdentifier;
+- (NSString *)playIdentifier
+{
+    return objc_getAssociatedObject(self, @selector(setPlayIdentifier:));
+}
+
+- (void)setPlayIdentifier:(NSString *)val
+{
+    objc_setAssociatedObject(self, _cmd, val, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>69D1DDB5-D2EA-423C-B4D4-BEC5C8556276</string>
+	<string>C9A27DA9-FF13-48A0-B6D8-2E458E520F11</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Dir files in extensions</string>
+	<string>Add Category Property</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dirFileFilterExtension</string>
+	<string>catProp</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
