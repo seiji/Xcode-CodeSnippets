@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>macro</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define APP_DELEGATE ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+#define BUNDLE  [NSBundle bundleForClass:[self class]]
+#define SCREEN_BOUNDS   ([UIScreen mainScreen].bounds)
+#define LOG(A, ...) NSLog(@"DEBUG: %s:%d:%@", __PRETTY_FUNCTION__,__LINE__,[NSString stringWithFormat:A, ## __VA_ARGS__]);
+#define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBA(r, g, b, a)    [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] &amp;&amp; [UIScreen mainScreen].scale &gt; 1)
+#define LANGUAGE    ([NSLocale preferredLanguages][0])
+#define STATUSBAR_H 20
+#define TABBAR_H    48
+#define NAVBAR_H    44
+#define TOOLBAR_H   44
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1468BE45-D478-4553-8D6C-185B10BD633B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>pch_macro</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>macro</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
