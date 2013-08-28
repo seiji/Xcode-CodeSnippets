@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>catAno</string>
+	<string>iphone5image</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#Class Name#&gt; ()
-&lt;#Continuation#&gt;
-@end
-</string>
+	<string>    if ([[UIScreen mainScreen] bounds].size.height == 568) {
+        _backgroundImageView.image = [UIImage imageNamed:@"Default-568h"];
+    } else  {
+        _backgroundImageView.image = [UIImage imageNamed:@"Default"];        
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4540173F-F353-4D54-ADCA-FE5E4F9CA5E8</string>
+	<string>1A734E31-C60A-424A-8E06-92CD97CCE996</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Anonymous category to define private methods in an implementation</string>
+	<string>iphone5 image</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>catAno</string>
+	<string>iphone5image</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

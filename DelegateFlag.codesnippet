@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>catAno</string>
+	<string>delegateFlags</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#Class Name#&gt; ()
-&lt;#Continuation#&gt;
-@end
+	<string>struct {
+    unsigned int didReceiveData : 1;
+    unsigned int didFailWithError : 1;
+} _delegateFlags;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>4540173F-F353-4D54-ADCA-FE5E4F9CA5E8</string>
+	<string>09D8C8F1-CDB5-4909-B16A-6A83D05E408D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Anonymous category to define private methods in an implementation</string>
+	<string>cache delegate Flags struct</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>catAno</string>
+	<string>delegateFlags</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
